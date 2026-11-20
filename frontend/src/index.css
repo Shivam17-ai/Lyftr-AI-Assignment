@@ -1,0 +1,109 @@
+:root {
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  
+  /* Vibrant Dark Theme (Default) */
+  --bg-primary: #0a0d17;
+  --bg-secondary: rgba(17, 22, 43, 0.85);
+  --bg-tertiary: #19203c;
+  --bg-hover: #232c52;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #818cf8;
+  --border-color: rgba(99, 102, 241, 0.25);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  
+  --accent-color: #6366f1;
+  --accent-hover: #4f46e5;
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  --accent-glow: 0 0 25px rgba(168, 85, 247, 0.45);
+  
+  --user-bubble: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+  --user-shadow: 0 4px 20px -2px rgba(139, 92, 246, 0.4);
+  --assistant-bubble: #12172d;
+  --assistant-border: 1px solid rgba(129, 140, 248, 0.22);
+  --assistant-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  --cache-badge-bg: linear-gradient(135deg, rgba(16, 185, 129, 0.22), rgba(5, 150, 105, 0.18));
+  --cache-badge-text: #34d399;
+  --cache-badge-border: rgba(16, 185, 129, 0.55);
+  --cache-glow: 0 0 12px rgba(16, 185, 129, 0.35);
+
+  --live-badge-bg: linear-gradient(135deg, rgba(99, 102, 241, 0.28), rgba(168, 85, 247, 0.22));
+  --live-badge-text: #a5b4fc;
+  --live-badge-border: rgba(129, 140, 248, 0.55);
+  --live-glow: 0 0 12px rgba(99, 102, 241, 0.35);
+
+  --error-bg: rgba(239, 68, 68, 0.18);
+  --error-text: #fca5a5;
+  --error-border: rgba(239, 68, 68, 0.45);
+  
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme='light'] {
+  --bg-primary: #f1f5f9;
+  --bg-secondary: rgba(255, 255, 255, 0.9);
+  --bg-tertiary: #e2e8f0;
+  --bg-hover: #cbd5e1;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --border-color: rgba(99, 102, 241, 0.2);
+  --border-subtle: #cbd5e1;
+  
+  --accent-color: #6366f1;
+  --accent-hover: #4f46e5;
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+  --accent-glow: 0 0 20px rgba(99, 102, 241, 0.3);
+
+  --user-bubble: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  --user-shadow: 0 4px 14px rgba(99, 102, 241, 0.3);
+  --assistant-bubble: #ffffff;
+  --assistant-border: 1px solid rgba(99, 102, 241, 0.18);
+  --assistant-shadow: 0 6px 20px rgba(99, 102, 241, 0.08);
+
+  --cache-badge-bg: #ecfdf5;
+  --cache-badge-text: #059669;
+  --cache-badge-border: #6ee7b7;
+  --cache-glow: none;
+
+  --live-badge-bg: #eef2ff;
+  --live-badge-text: #4f46e5;
+  --live-badge-border: #a5b4fc;
+  --live-glow: none;
+
+  --error-bg: #fef2f2;
+  --error-text: #dc2626;
+  --error-border: #fca5a5;
+  
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.18) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(236, 72, 153, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(139, 92, 246, 0.1) 0px, transparent 50%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+}
