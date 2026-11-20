@@ -23,10 +23,10 @@ flowchart TD
 
 # 1. Live URLs
 
-- **Frontend Deployment:** `https://your-frontend-deployment.vercel.app` *(placeholder)*
-- **Backend Deployment:** `https://your-backend-service.onrender.com` *(placeholder)*
-- **GitHub Repository:** `https://github.com/Shivam17-ai/Lyftr-AI-Assignment`
-- **Demo Video:** `https://www.loom.com/share/your-demo-video-id` *(placeholder)*
+- **Frontend Deployment:** [https://lyftr-ai-assignment-tau.vercel.app/]
+- **Backend Deployment:** [https://lyftr-ai-assignment-8loa.onrender.com]
+- **Backend Health Check:** [https://lyftr-ai-assignment-8loa.onrender.com/health]
+- **GitHub Repository:** [https://github.com/Shivam17-ai/Lyftr-AI-Assignment]
 
 ---
 
@@ -42,8 +42,8 @@ flowchart TD
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/llm-failover-chatbot.git
-   cd llm-failover-chatbot
+   git clone https://github.com/Shivam17-ai/Lyftr-AI-Assignment.git
+   cd Lyftr-AI-Assignment
    ```
 
 2. **Configure environment:**
